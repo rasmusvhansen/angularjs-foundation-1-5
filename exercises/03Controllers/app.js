@@ -15,7 +15,7 @@
           // 3. Complete the unit test that verifies this structure
           // 4. Adapt the view to display this list (use .video css class for each video div)
       });
-    }
+    };
     
     ctrl.search();
   });

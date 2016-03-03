@@ -1,13 +1,15 @@
-# angularjs-foundation-course
+# angularjs-foundation-course 1.5
 Internal Systematic course
 ### Setup
 
-1. Go to https://codio.com/rasmusvhansen/ in Chrome and click on angularjs-foundation-course
-2. Sign in with your github account
-3. Click Project -> Fork
-4. Open a terminal (Shift-Alt-T)
-5. Run ```npm install```
+0. Create a GitHub account
+1. Go to https://c9.io/ and log in with your github account
+2. Create new workspace
+3. Give it a name
+4. In the 'Clone from Git or Mercurial' field, paste https://github.com/rasmusvhansen/angularjs-foundation-1-5
+5. Click 'Create Workspace'
+6. Open a terminal (Alt+T) in bottom pane and run 'npm install'
 
 
-Or clone https://github.com/rasmusvhansen/angularjs-foundation-course and run npm install
+Or clone https://github.com/rasmusvhansen/angularjs-foundation-1-5 and run npm install and use your favorite editor (then you are on your own)
 
