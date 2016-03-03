@@ -5,21 +5,20 @@
   "main": "index.js",
   "dependencies": {
     "angular": "^1.5.0",
-    "angular-ui-router": "^0.2.13",
     "angular-mocks": "^1.5.0",
+    "angular-ui-router": "^0.2.13",
     "jasmine-core": "^2.2.0",
-    "jquery": "^2.1.3",
     "jasmine-jquery": "^2.0.6",
+    "jquery": "^2.1.3",
     "karma": "^0.13.21",
-    "karma-phantomjs-launcher": "^1.0.0",
-    "karma-jasmine": "^0.3.5"
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^1.0.0"
   },
   "devDependencies": {
-    "phantomjs": "^2.1.3",
     "serve": "^1.4.0"
   },
   "scripts": {
-    "preinstall": "npm i -g karma-cli",
+    "preinstall": "npm i -g karma-cli phantomjs",
     "start": "serve",
     "test": "karma start"
   },
