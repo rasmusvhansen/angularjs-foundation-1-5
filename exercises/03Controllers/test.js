@@ -13,7 +13,7 @@
     }));
     
     it('should query for Rick Astley by default', function () {
-      expect(controller.query).toBe('Rick Astley')
+      expect(controller.query).toBe('Rick Astley');
       
       httpBackend.expectGET(/.*q=Rick Astley.*/).respond({items: []});
       controller.search();
@@ -50,7 +50,7 @@
       expect(controller.videos.length).toBe(1);
       
       // TODO: verify that ctrl.videos looks as expected given this reply from $http
-    })
+    });
         
   });
 })();
