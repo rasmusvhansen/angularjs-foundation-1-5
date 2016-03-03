@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>06</title>
+  <script src="..\..\node_modules\angular\angular.js"></script>
+  <script src="..\..\node_modules\angular-ui-router\release\angular-ui-router.js"></script>
+  <script src="scripts\validation.js"></script>
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+
+<body ng-app="myApp">
+  <form name="myForm">
+    
+
+    <div>
+      <input type="text" name="chars" ng-model="chars" ng-pattern="/^[A-Za-z0-9]{4,8}$/" placeholder="4-8 chars letters and numbers">
+      <p class="error" ng-show="myForm.chars.$error.pattern">4-8 letters and numbers please</p>
+    </div>
+    
+    <div>
+      <input type="text" name="color" is-blue ng-model="color" placeholder="Make it blue">
+      <p class="error" ng-if="myForm.color.$error.isBlue">It is NOT blue - please fix!</p>
+    </div>
+    <!--{{myForm}}-->
+    <button type="submit" ng-disabled="myForm.$invalid">
+      Submit
+    </button>
+  </form>
+
+</body>
+
+</html>

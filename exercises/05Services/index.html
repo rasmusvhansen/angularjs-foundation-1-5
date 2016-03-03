@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>05</title>
+  <script src="..\..\node_modules\angular\angular.js"></script>
+  <script src="..\..\node_modules\angular-ui-router\release\angular-ui-router.js"></script>
+  <script src="scripts\app.js"></script>
+  <script src="scripts\routing.js"></script>
+
+  <style>
+    .video {
+      background: linear-gradient(to bottom right, #c2c2d2, #232343);
+      box-shadow: 7px 7px 3px #888888;
+      width: 300px;
+      float: left;
+      min-height: 360px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    form, .video, #results p {
+      margin: 5px;
+    }
+    .video p:first-of-type {
+      font-weight: bold;
+    }
+    img {
+      max-height: 160px;
+      max-width: 280px;
+    }
+  </style>
+</head>
+
+<body ng-app="myApp">
+  <div ui-view></div>  
+</body>
+
+</html>

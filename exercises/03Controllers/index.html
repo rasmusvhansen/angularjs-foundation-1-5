@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>03</title>
+  <script src="..\..\node_modules\angular\angular.js"></script>
+  <script src="app.js"></script>
+  
+  <style>
+    .video {
+            background: linear-gradient(to bottom right, #c2c2d2, #232343);
+            box-shadow: 7px 7px 3px #888888;
+            width: 300px;
+            float: left;
+            min-height: 360px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        form, .video, #results p {
+            margin: 5px;
+        }
+        .video p:first-of-type {
+            font-weight: bold;
+        }
+        img {
+            max-height: 160px;
+            max-width: 280px;
+        }
+  </style>
+  
+</head>
+
+<body ng-app="myApp">
+  <div ng-controller="VideoListController as vidList"> 
+    <div>
+      <!-- 3. Create an input field that binds to vidList.query -->
+      <!-- 4. Create a submit button that calls vidList.search() -->
+    </div>
+    
+    <!-- 1. repeat this div for each video in vidList.videos -->
+    <!-- 2. populate Title, link, image, description -->
+    <div class="video">
+      <p>This should be the title</p>
+      <a href=""><img src="https://www.google.dk/images/srpr/logo11w.png"></a>
+      <p>This should be the description</p>
+    </div> 
+  </div>
+</body>
+</html>

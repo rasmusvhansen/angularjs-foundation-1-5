@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>06</title>
+  <script src="..\..\node_modules\angular\angular.js"></script>
+  <script src="..\..\node_modules\angular-ui-router\release\angular-ui-router.js"></script>
+  <script src="scripts\collapse.js"></script>
+  <style>
+    .collapse {
+      height: 0px;
+      width: 300px;
+      overflow: hidden;
+      transition: height 300ms linear;      
+    }
+    
+    .collapse.expanded {
+      height: 200px;
+    }
+    
+    .my-text {
+      border: 1px solid black;
+      height: 195px;
+      margin: 0;
+      background: linear-gradient(to bottom right, #c2c2d2, #232343);
+      box-shadow: 7px 7px 3px #888888;
+    }
+  </style>
+</head>
+
+<body ng-app="collapse" ng-init="collapsed = false">
+   
+  <button ng-click="collapsed = !collapsed">
+    Toggle
+  </button>
+  
+  <div collapse="collapsed">
+    <p class="my-text">This is in a collapsible</p>
+  </div>
+ 
+
+</body>
+
+</html>

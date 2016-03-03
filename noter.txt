@@ -1,0 +1,3 @@
+Noter
+
+Slides, start med 01 og derefter 04 for at introducere indbyggede view directives og view scope cyklen

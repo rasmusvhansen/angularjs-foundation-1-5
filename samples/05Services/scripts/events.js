@@ -1,0 +1,22 @@
+(function () {
+  angular.module('events', [])
+  
+  .controller('AController', function ($rootScope) {
+    var ctrl = this;
+    ctrl.sendMessage = function (message) {
+      $rootScope.$emit('msg', message);
+    };
+  })
+  
+  .controller('BController', function ($rootScope) {
+    var ctrl = this;
+    ctrl.message = '';
+    $rootScope.$on('msg', function (e, msg) {
+      ctrl.message = msg;
+    });
+  });
+})();
+
+// events should be used sparingly. If there are a lot of events in a system, it can be difficult to reason about what is going on
+// another way of communicating between controllers is to use a service that both controllers depend on.
+// broadcast goes up, emit goes down. 

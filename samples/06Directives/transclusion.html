@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>06</title>
+  <script src="..\..\node_modules\angular\angular.js"></script>
+  <script src="..\..\node_modules\angular-ui-router\release\angular-ui-router.js"></script>
+  <script src="scripts\transclusion.js"></script>
+  <style>
+    .frame {
+      border: 10px solid red;
+    }
+    
+    .other-frame {
+       border: 15px solid blue; 
+    }
+  </style>
+</head>
+
+<body ng-app="myApp">
+  <my-frame>
+    <p>I want this in a frame</p>
+  </my-frame>
+  
+  <my-frame class-name="other-frame">
+    <p>I want this in a frame</p>
+  </my-frame>
+
+</body>
+
+</html>

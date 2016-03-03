@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>05</title>
+  <script src="..\..\node_modules\angular\angular.js"></script>
+  <script src="..\..\node_modules\angular-ui-router\release\angular-ui-router.js"></script>
+  <script src="scripts\events.js"></script>
+  <style>
+    div {
+      border: 1px dotted black;
+      margin: 10px;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body ng-app="events">
+  
+  <div ng-controller="AController as a">
+    <input ng-model="a.message">
+    <button ng-click="a.sendMessage(a.message)">
+      Send
+    </button>
+    
+  </div>
+  
+  <div ng-controller="BController as b">
+    {{b.message}}
+    
+  </div>
+
+  
+</body>
+
+</html>

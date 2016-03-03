@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>06</title>
+  <script src="..\..\node_modules\angular\angular.js"></script>
+  <script src="..\..\node_modules\angular-ui-router\release\angular-ui-router.js"></script>
+  <script src="scripts\widget.js"></script>
+  <style>
+   .widget {
+     width: 300px;
+     height: 300px;
+     border: 1px solid black;
+     display: inline-block;
+   }
+    
+    .emitted {
+      border-radius: 50%;
+      border: 1px solid #3ef;
+      position: absolute;
+      background-color: none;
+      display: block;
+      width: 40px;
+      height: 40px;
+    }
+  </style>
+</head>
+
+<body ng-app="myApp">
+  <h1>Color widget</h1>
+  
+  <my-color-widget></my-color-widget>
+
+</body>
+
+</html>

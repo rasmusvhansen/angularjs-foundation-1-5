@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>06</title>
+  <script src="..\..\node_modules\angular\angular.js"></script>
+  <script src="..\..\node_modules\angular-ui-router\release\angular-ui-router.js"></script>
+  <script src="validation.js"></script>
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+
+<body ng-app="myApp" ng-controller="FormController as formCtrl">
+  <form name="myForm">   
+
+    <div>
+      <!-- Create form inputs that validates the entries using e.g. ng-maxlength, ng-minlength, ng-pattern, required, etc. see https://docs.angularjs.org/api/ng/directive/input -->
+      <!-- Display an error when validation fails -->
+    </div>
+    
+    <div>
+      <!-- add a select using select and ng-options fetching values from formCtrl.countries. Remember ng-model. Display selected value below dropdown -->
+      <!-- bonus points for grouping by region. See https://docs.angularjs.org/api/ng/directive/ngOptions --> 
+      <select ng-options="" ng-model="formCtrl.selected">
+        
+      </select>
+      <div>
+        Selected: {{formCtrl.selected.value}}
+      </div>
+      
+    </div>
+    {{myForm}}
+    <button type="submit" ng-disabled="myForm.$invalid">
+      Submit
+    </button>
+  </form>
+
+</body>
+
+</html>
