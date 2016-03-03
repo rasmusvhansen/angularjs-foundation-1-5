@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>03</title>
+  <script src="..\..\node_modules\angular\angular.js"></script>
+  <script src="app.js"></script>
+  
+  <style>
+    .video {
+            background: linear-gradient(to bottom right, #c2c2d2, #232343);
+            box-shadow: 7px 7px 3px #888888;
+            width: 300px;
+            float: left;
+            min-height: 360px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        form, .video, #results p {
+            margin: 5px;
+        }
+        .video p:first-of-type {
+            font-weight: bold;
+        }
+        img {
+            max-height: 160px;
+            max-width: 280px;
+        }
+  </style>
+  
+</head>
+
+<body ng-app="myApp">
+  
+  <!-- TODO extract this element to a app component that handles search and repeats over the results using the 
+  videoDetails component to render each video -->
+  <div ng-controller="VideoListController as vidList"> 
+    <div>
+      <form ng-submit="vidList.search()">        
+        <input type="text" ng-model="vidList.query">
+        <input type="submit" value="Search">        
+      </form>
+    </div>
+    
+    <!-- TODO extract this element to a videoDetails component that takes a video as input -->
+    <div class="video" ng-repeat="v in vidList.videos">
+      <p>{{v.title}}</p>
+      <a ng-href="{{v.link}}"><img ng-src="{{v.thumb}}"></a>
+      <p>{{v.description}}</p>
+    </div> 
+  </div>
+</body>
+
+</html>
