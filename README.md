@@ -2,7 +2,8 @@
 Internal Systematic course
 ### Setup
 
-0. Create a GitHub account
+0. Go to http://bit.do/ng15 to read (and copy from) this instruction
+1. Create a GitHub account
 1. Go to https://c9.io/ and log in with your github account
 2. Create new workspace
 3. Give it a name
