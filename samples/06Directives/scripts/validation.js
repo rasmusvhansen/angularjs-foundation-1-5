@@ -4,7 +4,6 @@
       require: 'ngModel',
       link: function(scope, elm, attrs, ctrl) {
         ctrl.$validators.isBlue = function(modelValue, viewValue) {
-          
           return !modelValue || modelValue === 'blue';
         };
       }
