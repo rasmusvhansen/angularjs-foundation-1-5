@@ -13,7 +13,6 @@ describe('component: app', function() {
   }));
 
   it('should inject the given video into the component', function() {
-    // It's necessary to always pass the scope in the locals, so that the controller instance can be bound to it
     component = $componentController('videoDetails', {$scope: scope}, {video: video});
 
     expect(component.video).toEqual({
