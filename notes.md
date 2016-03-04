@@ -1,6 +1,7 @@
 # Notes and links
 
 ## Links
+* https://docs.angularjs.org/guide/component
 * https://docs.angularjs.org/api
 * https://github.com/johnpapa/angular-styleguide
 * http://jasmine.github.io/2.0/introduction.html
