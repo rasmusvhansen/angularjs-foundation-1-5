@@ -2,11 +2,11 @@
   'use strict';
   angular.module('myApp', [])
   
-  .directive('myColorWidget', function ($log, $timeout) {
+  .directive('myColorWidget', function ($timeout) {
     return {
       restrict: 'E',
       template: '<div class="widget"></div>',
-      link: function (scope, element, attrs) {
+      link: function (_, element, attrs) {
         element.on('mousemove', function (e) {
           var x = e.clientX;
           var y = e.clientY;
