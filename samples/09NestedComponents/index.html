@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>09 - Nested Components</title>
+  <script src="..\..\node_modules\angular\angular.js"></script>
+  <script src="..\..\node_modules\angular-animate\angular-animate.js"></script>
+  <script src="app.js"></script>
+
+  <style>
+    body {
+      padding: 10px;
+    }
+  
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+    }
+    
+    .panes {
+      border: 1px solid black;
+      padding: 5px;
+      box-shadow: 6px 6px 3px 0px rgba(0,0,0,0.75);
+    }
+    
+    .tabs__links {
+      list-style-type: none;
+      margin: 4px 0;
+      padding: 0;
+    }
+    
+    .tabs__links li {
+      display: inline;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-bottom: 1px solid black;
+    }
+    
+    .tabs__links li a { 
+      color: #888;
+    }
+    
+    .tabs__links li.active {
+      border: 1px solid black;
+      border-bottom-color: white;
+    }
+    
+    .tabs__links li.active a {
+      color: black;
+    }
+  </style>
+
+</head>
+
+<body ng-app="myApp">
+  <tabs>
+    <pane title="Pane 1">
+      <content>
+        <p>This is where Dependency Injection comes into play. Dependency Injection (DI) is a software design pattern that deals with how objects and functions get created and how they get a hold of their dependencies. Everything within Angular (directives,
+          filters, controllers, services, ...) is created and wired using dependency injection. Within Angular, the DI container is called the injector.</p>
+
+        <p>To use DI, there needs to be a place where all the things that should work together are registered. In Angular, this is the purpose of the modules. When Angular starts, it will use the configuration of the module with the name defined by the ng-app
+          directive, including the configuration of all modules that this module depends on.</p>
+      </content>
+    </pane>
+
+    <pane title="Pane 2">
+      <content>
+        <p>Some other content</p>
+      </content>
+    </pane>
+    
+    <pane title="Pane 3">
+      <content>
+        <h1>Some other content</h1>
+      </content>
+    </pane>
+    
+    <pane title="Pane 4">
+      <content>
+        <h1>Even more content</h1>
+      </content>
+    </pane>
+  </tabs>
+
+</body>
+
+</html>
