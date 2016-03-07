@@ -1,0 +1,7 @@
+<div class="mybox">
+  <div class="mybox__header" ng-click="visible = !visible">
+    <div class="mybox__collapse-indicator">{{visible ? '&blacktriangleright;' : '&blacktriangledown;'}}</div>
+    <div ng-transclude="headerSlot"></div>
+  </div>
+  <div class="mybox__content" ng-transclude ng-show="visible"></div>
+</div>

@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>03</title>
+  <script src="..\..\node_modules\angular\angular.js"></script>
+  <script src="..\..\node_modules\angular-animate\angular-animate.js"></script>
+  <script src="..\..\node_modules\angular-route\angular-route.js"></script>
+  <script src="app.js"></script>
+
+  <style>
+    .mybox {
+      float: left;
+      border: 2px solid black;
+      border-radius: 4px;
+      padding: 0;
+      width: 300px;
+      margin: 5px;
+    }
+    
+    .mybox__header {
+      font-weight: bold;
+      font-size: 1.2em;
+      font-variant: small-caps;
+      color: white;
+      background-color: #0055ff;
+      padding: 5px;
+      cursor: pointer;
+      position: relative;
+    }
+    
+    .mybox__collapse-indicator {
+      position: absolute;
+      right: 5px;
+      font-size: 1.5em;
+      top: -6px;
+    }
+    
+    .mybox__content {
+      padding: 5px;
+      height: 200px;
+      overflow: hidden;
+    }
+    
+    .mybox__content.ng-hide {
+      height: 0;
+    }
+    
+    .mybox__content.ng-hide-add,
+    .mybox__content.ng-hide-remove {
+      transition: 0.2s linear all;
+    }
+  </style>
+
+</head>
+
+<body ng-app="myApp">
+  <my-box>
+    <header>Angular</header>
+    <content>
+      <ul>
+        <li><a href="https://docs.angularjs.org/guide/component">Angular Component</a></li>
+        <li><a href="https://docs.angularjs.org/guide/directive">Angular Directives</a></li>
+      </ul>
+    </content>
+  </my-box>
+
+  <my-box>
+    <header>Other Stuff</header>
+    <content>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non ipsum sit amet quam varius rhoncus a eu metus. Donec elementum diam risus, eget semper ex tempor eu. Cras ex turpis, tristique ac tellus elementum, placerat pellentesque eros.
+        Nunc tristique ligula tincidunt risus aliquam, non dignissim leo bibendum. Phasellus tristique nibh ipsum, auctor porttitor ligula.</p>
+    </content>
+  </my-box>
+
+</body>
+
+</html>
