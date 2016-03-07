@@ -6,38 +6,48 @@
   <script src="..\..\node_modules\angular\angular.js"></script>
   <script src="..\..\node_modules\angular-animate\angular-animate.js"></script>
   <script src="app.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Jura:400,500,600' rel='stylesheet' type='text/css'>
 
   <style>
-    body {
-      padding: 10px;
+    h1,
+    h2,
+    h3,
+    a {
+      font-family: 'Jura', sans-serif;
     }
-  
+    
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    
     a {
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
       color: black;
     }
     
     .panes {
       border: 1px solid black;
       padding: 5px;
-      box-shadow: 6px 6px 3px 0px rgba(0,0,0,0.75);
+      box-shadow: 6px 6px 3px 0px rgba(0, 0, 0, 0.75);
     }
     
     .tabs__links {
       list-style-type: none;
-      margin: 4px 0;
-      padding: 0;
+      margin-bottom: -1px;
+      padding: 0px 0;
     }
     
     .tabs__links li {
-      display: inline;
+      display: inline-block;
       padding: 5px;
       border: 1px solid #ccc;
       border-bottom: 1px solid black;
     }
     
-    .tabs__links li a { 
+    .tabs__links li a {
       color: #888;
     }
     
@@ -57,6 +67,7 @@
   <tabs>
     <pane title="Pane 1">
       <content>
+        <h1>A lot of stuff</h1>
         <p>This is where Dependency Injection comes into play. Dependency Injection (DI) is a software design pattern that deals with how objects and functions get created and how they get a hold of their dependencies. Everything within Angular (directives,
           filters, controllers, services, ...) is created and wired using dependency injection. Within Angular, the DI container is called the injector.</p>
 
@@ -67,19 +78,28 @@
 
     <pane title="Pane 2">
       <content>
+        <h1>This is a header</h1>
         <p>Some other content</p>
       </content>
     </pane>
-    
+
     <pane title="Pane 3">
       <content>
         <h1>Some other content</h1>
+        <p>Just apply a class="clearfix" to the parent element. This is an improved version of the original, and documented here.</p>
+
+        <p>Updated by Jeff Starr to be cleaner, based on the fact that nobody uses IE for Mac, which is what the backslash hack was all about.</p>
       </content>
     </pane>
-    
+
     <pane title="Pane 4">
       <content>
         <h1>Even more content</h1>
+        <p>This looks like normal HTML, with some new markup. In Angular, a file like this is called a template. When Angular starts your application, it parses and processes this new markup from the template using the compiler. The loaded, transformed and
+          rendered DOM is then called the view.</p>
+
+        <p>The first kind of new markup are the directives. They apply special behavior to attributes or elements in the HTML. In the example above we use the ng-app attribute, which is linked to a directive that automatically initializes our application.
+          Angular also defines a directive for the input element that adds extra behavior to the element. The ng-model directive stores/updates the value of the input field into/from a variable.</p>
       </content>
     </pane>
   </tabs>
