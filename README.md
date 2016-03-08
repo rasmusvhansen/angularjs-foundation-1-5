@@ -14,3 +14,4 @@ Internal Systematic course
 
 Or clone https://github.com/rasmusvhansen/angularjs-foundation-1-5 and run npm install and use your favorite editor (then you are on your own)
 
+Slides: https://docs.google.com/presentation/d/1AhE5iZzMhk1bJnGnXxziizO6Bd5bxt7E3zJyS0yl9A4/edit?usp=sharing
