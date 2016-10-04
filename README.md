@@ -9,7 +9,7 @@ If you don't want to fork out credit card details, you should
 2. Run git clone https://github.com/rasmusvhansen/angularjs-foundation-1-5
 3. Run npm install in the cloned repository.
 
-
+If you want to run in the online ide, you need to:
 
 0. Go to http://bit.do/ng15 to read (and copy from) this instruction
 1. Create a GitHub account
