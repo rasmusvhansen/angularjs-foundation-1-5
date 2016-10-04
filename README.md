@@ -5,6 +5,7 @@ Internal Systematic course
 If you don't want to fork out credit card details, you should 
 
 0. Install git https://git-scm.com/download/win
+1. Install node js https://nodejs.org/dist/v6.7.0/node-v6.7.0-x64.msi
 1. Install an editor https://code.visualstudio.com/c?utm_expid=101350005-28.R1T8FshdTBWEfZjY0s7XKQ.2&utm_referrer=https%3A%2F%2Fwww.google.dk%2F
 2. Run git clone https://github.com/rasmusvhansen/angularjs-foundation-1-5
 3. Run npm install in the cloned repository.
